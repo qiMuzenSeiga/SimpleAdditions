@@ -27,13 +27,13 @@ public class ItemBase extends Item  {
     private final float attackSpeed;
 
     public ItemBase(String name, float attackDamage, float attackSpeed) {
-//        setRegistryName(name);
-//        setTranslationKey(SimpleAdditions.MOD_ID + "." + name);
-//        setCreativeTab(CreativeTabs.MISC);
+
         super();
-        setTranslationKey(SimpleAdditions.MOD_ID + "." + name);
-        setRegistryName(name);
-        setCreativeTab(CreativeTabs.COMBAT);
+        this.setTranslationKey(SimpleAdditions.MOD_ID + "." + name);
+
+
+        this.setRegistryName(name);
+        this.setCreativeTab(CreativeTabs.COMBAT);
         this.attackDamage = attackDamage;
         this.attackSpeed = attackSpeed;
         // 剑通常不允许堆叠
